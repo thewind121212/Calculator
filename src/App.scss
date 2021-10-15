@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+//color variable
+$body-background: #f5f5f5;
+$txt-color: #6d6d6d;
+$txt-white: #fff;
+$calc-res-color: #2f2d2f;
+$calc-btn-color: #d400ff;
+$cacl-bg: #fff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Monterrrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: $body-background;
+  color: $txt-color;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  &.dark {
+    $calc-res-color: #fff;
+    $cacl-bg: #373737;
+  }
+}
+
+button {
+  font-family: "Monterrrat", sans-serif;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: unset;
+    padding-top: 0;
+  }
+}
